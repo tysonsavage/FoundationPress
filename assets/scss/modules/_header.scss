@@ -1,0 +1,36 @@
+
+.site-header {
+    @include breakpoint(small) {
+    
+        border-bottom: 1px solid $light-gray;
+        
+        .site-branding {
+            margin-top:50px;
+            // text-align: center;
+        }
+        .site-title {
+            margin-bottom: 0px;
+            white-space: no-wrap;
+
+            a {
+                color: inherit;
+            }
+        }
+        .subheader {
+            font-family: $header-font-family;
+            font-style: italic;
+            font-size: rem-calc(19);
+            color: $black;
+        }
+
+        img.site-icon-mobile {
+            height: 25px;
+            width: 25px;
+        }
+
+    }
+
+
+
+}
+

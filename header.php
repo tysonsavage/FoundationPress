@@ -27,28 +27,29 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header row" role="banner" >
+		<!-- TODO: position fixed for mobile menu -->
 		<div class="title-bar" data-responsive-toggle="mobile-menu">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img class="site-icon-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/heart-icon.png" alt="Mark Savage - CPP">
+				</a>
 			</div>
+			
+			<div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="mobile-menu"></button></div>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
-				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-				</ul>
-			</div>
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
+		<div id="site-navigation" class="mobile-menu-wrapper top-bar" role="navigation">				
+			<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+		</div>
+		
+		<div class="site-branding small-12 medium-8 columns">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h4 class="subheader"><?php bloginfo( 'description' ); ?>
+		</div>
+		
 
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
-			</div>
-		</nav>
+		
 	</header>
 
 	<section class="container">

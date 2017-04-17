@@ -1,0 +1,23 @@
+.entry-content {
+    p:first-child {
+        font-family: $header-font-family;
+        font-size: rem-calc(18);
+    }
+}
+
+.line-it-before::before, .line-it-after::after {
+    border-bottom: 2px solid;
+    content: "";
+    display: block;
+    margin: 1.25rem 0;
+    width: 50px;
+}
+
+
+.full-line-after:after {
+    border-bottom: 2px solid;
+    content: "";
+    display: block;
+    margin: 1.25rem 0;
+    width: 100%;
+}

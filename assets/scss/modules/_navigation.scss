@@ -3,7 +3,7 @@
   @include show-for(medium);
 }
 
-#mobile-menu, .title-bar {
+#mobile-menu, .title-bar, .mobile-menu-wrapper {
   @include hide-for(medium);
 }
 
@@ -15,7 +15,7 @@
 
     a {
       color: $white;
-      font-weight: 600;
+      font-weight: normal;
       font-size: rem-calc(18);
       opacity: .75;
     }
@@ -61,7 +61,7 @@
     color: #e6e6e6;
     padding-top: 0;
     padding-bottom: 0;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 0.8rem;
     line-height: 1;
 

@@ -9,7 +9,6 @@ get_header(); ?>
 		<div class="tagline">
 			<h1><?php bloginfo( 'name' ); ?></h1>
 			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
 		</div>
 
 		<div id="watch">

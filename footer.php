@@ -13,6 +13,12 @@
 		</section>
 		<div id="footer-container">
 			<footer id="footer">
+
+				<div class="contact-footer">
+					<h2 class="line-it-after">Contact</h2>
+					<p>You can contact me on <a class="white" href="tel:07413710927">07413 710 927</a> or at <a class="white" href="email:mark@marktsavage.co.uk">mark@marktsavage.co.uk</a> .
+				</div>
+
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
