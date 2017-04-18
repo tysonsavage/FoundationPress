@@ -18,8 +18,9 @@
         
         .contact-footer {
             @include grid-column(12);
-            h2 {
+            h3 {
                 font-style: italic;
+                margin-bottom: 1.25rem;
             }
             a.white { 
                 color: $white;
