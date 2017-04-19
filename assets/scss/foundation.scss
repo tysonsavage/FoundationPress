@@ -24,7 +24,11 @@
 
 // Third-party libraries
 @import 'font-awesome';
-@import 'motion-ui';
+// @import 'motion-ui';
+
+
+
+// --------------------- FOUNDATION CUSTOM INCLUDES:
 
 // Foundation global styles
 @include foundation-global-styles;
@@ -69,9 +73,10 @@
 @include foundation-float-classes;
 @include foundation-flex-classes;
 
-// Motion UI
-@include motion-ui-transitions;
-@include motion-ui-animations;
+// --------------------- Motion UI custom includes:
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
+
 
 /*
   My custom styles:

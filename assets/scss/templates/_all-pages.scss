@@ -1,13 +1,21 @@
+
 .entry-title {
     
 }
 .entry-content {
+    p {
+        opacity: 0;
+    }
     p:first-child {
         font-family: $header-font-family;
         font-size: rem-calc(18);
     }
 }
 
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s;
+}
 .line-it-before::before, .line-it-after::after {
     border-bottom: 2px solid;
     content: "";
@@ -24,3 +32,4 @@
     margin: 1.25rem 0;
     width: 100%;
 }
+

@@ -7,7 +7,12 @@
   "ignore": [],
   "dependencies": {
     "foundation-sites": "~6.3.0",
-    "motion-ui" : "~1.2.0",
-    "fontawesome": "~4.7.0"
+    "motion-ui": "~1.2.0",
+    "fontawesome": "~4.7.0",
+    "scrollMonitor": "^1.2.3",
+    "animate-sass": "^0.6.6"
+  },
+  "devDependencies": {
+    "animate-sass": "^0.6.6"
   }
 }
