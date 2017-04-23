@@ -43,10 +43,15 @@
 			<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 		</div>
 		
-		<div class="site-branding small-12 medium-8 columns">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?>
-		</div>
+		<!-- <div class="site-branding-wrapper"> -->
+			<div class="site-branding ">
+				
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+				
+			</div>
+			
+		<!-- <div> -->
 		
 
 		

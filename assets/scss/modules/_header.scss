@@ -1,12 +1,11 @@
 
 .site-header {
     @include breakpoint(small) {
-    
-        border-bottom: 1px solid $light-gray;
+        margin-top: 50px;
+        border-bottom: 1px solid $dark-gray;
         
         .site-branding {
-            margin-top:50px;
-            // text-align: center;
+            @include grid-column(12);
         }
         .site-title {
             margin-bottom: 0px;
@@ -30,6 +29,20 @@
 
     }
 
+
+
+    @include breakpoint(medium) {
+        margin-top: 150px;
+        .site-branding {
+            @include grid-column(5);
+            text-align: right;
+        }
+
+        .subheader {
+            font-size: rem-calc(24);
+
+        }
+    }
 
 
 }

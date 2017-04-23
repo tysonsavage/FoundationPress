@@ -1,6 +1,31 @@
 
 .entry-title {
-    
+    float: left;
+
+    @include breakpoint(small) {
+        // &::after {
+        //     background: url('../images/wave-line.png') no-repeat top;
+        //     content: "";
+        //     display: block;
+        //     margin: 0;
+        //     width: 200px;
+        //     height: 45px;
+        //     background-size: 100%;
+        // }
+    }
+    @include breakpoint(medium) {
+        &::after {
+            background-image: url('../images/wave-line.jpg'), url('../images/wave-line-partial.png');
+            background-position: top right, top left;
+            background-repeat: no-repeat, repeat;
+            background-size: 225px 45px, 80% 45px;
+            content: "";
+            display: block;
+            margin: -1rem 0 0 0;
+            width: calc(90% + 180px);
+            height: 45px;
+        }
+    }
 }
 .entry-content {
     p {
@@ -25,6 +50,13 @@
     width: 50px;
 }
 
+.wave-it-after::after {
+    background: url('../images/wave-line.png') no-repeat top center;
+    content: "";
+    display: block;
+    margin: 1.25rem 0;
+    width: 50px;
+}
 
 .full-line-after:after {
     border-bottom: 2px solid;

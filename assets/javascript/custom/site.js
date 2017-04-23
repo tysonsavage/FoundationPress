@@ -4,6 +4,7 @@ $(function() {
         var watcher = scrollMonitor.create( $(this), -65 );
         watcher.enterViewport(function() {
             $(this.watchItem).addClass('fade-in');
+            console.log('watcher active');
             this.destroy();
         });
     });
