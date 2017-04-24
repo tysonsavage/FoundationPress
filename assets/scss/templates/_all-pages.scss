@@ -1,17 +1,16 @@
 
 .entry-title {
     float: left;
+    // margin-top: 30px;
 
-    @include breakpoint(small) {
-        // &::after {
-        //     background: url('../images/wave-line.png') no-repeat top;
-        //     content: "";
-        //     display: block;
-        //     margin: 0;
-        //     width: 200px;
-        //     height: 45px;
-        //     background-size: 100%;
-        // }
+    @include breakpoint(small only) {
+        &::after {
+            border-bottom: 2px solid;
+            content: "";
+            display: block;
+            margin: 1.25rem 0;
+            width: 50px;
+        }  
     }
     @include breakpoint(medium) {
         &::after {
@@ -21,8 +20,8 @@
             background-size: 225px 45px, 80% 45px;
             content: "";
             display: block;
-            margin: -1rem 0 0 0;
-            width: calc(90% + 180px);
+            margin: -0.5rem 0 0 0;
+            width: calc(80% + 180px);
             height: 45px;
         }
     }
@@ -44,14 +43,6 @@
 
 .line-it-before::before, .line-it-after::after {
     border-bottom: 2px solid;
-    content: "";
-    display: block;
-    margin: 1.25rem 0;
-    width: 50px;
-}
-
-.wave-it-after::after {
-    background: url('../images/wave-line.png') no-repeat top center;
     content: "";
     display: block;
     margin: 1.25rem 0;
