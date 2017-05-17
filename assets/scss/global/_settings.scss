@@ -65,6 +65,7 @@ $outer-space: #2c3840;
 // MS: Additional custom colours:
 $blue: #5C83EB;
 $amethyst: #9966CC;
+$orange: #ffa500;
 
 $body-background: $white;
 $body-font-color: $black;
@@ -128,8 +129,8 @@ $header-styles: (
   ),
   medium: (
     'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h2': ('font-size': 44),
+    'h3': ('font-size': 24),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),

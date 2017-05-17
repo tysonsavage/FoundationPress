@@ -27,7 +27,7 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header id="masthead" class="site-header row" role="banner" >
+	<header id="masthead" class="site-header" role="banner" >
 		<!-- TODO: position fixed for mobile menu -->
 		<div class="title-bar" data-responsive-toggle="mobile-menu">
 			<div class="title-bar-title">
@@ -49,13 +49,24 @@
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
 				
-			</div>
-			
+			</div>			
 		<!-- <div> -->
 		
-
-		
 	</header>
-
+	
+	<div class="main-nav-wrapper">
+		<div class="main-nav">
+			<ul>
+				<li class="active"><a href="/">about</a></li>
+                <li><a href="/why-psychotherapy/">why psychotherapy</a></li>
+                <li><a href="/mindfulness-and-psychotherapy/">mindful approach</a></li>
+                <li><a href="/fees/">fees</a></li>
+                <li><a href="/contact/">contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
 	<section class="container">
+
+
 		<?php do_action( 'foundationpress_after_header' );

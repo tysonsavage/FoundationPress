@@ -60,7 +60,7 @@ var PATHS = {
     // 'assets/components/foundation-sites/js/foundation.slider.js',
     'assets/components/foundation-sites/js/foundation.sticky.js',
     // 'assets/components/foundation-sites/js/foundation.tabs.js',
-    'assets/components/foundation-sites/js/foundation.toggler.js',
+    // 'assets/components/foundation-sites/js/foundation.toggler.js',
     // 'assets/components/foundation-sites/js/foundation.tooltip.js',
     // 'assets/components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js',
 

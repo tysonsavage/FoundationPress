@@ -11,8 +11,8 @@
 ?>
 
 		</section>
-		<div id="footer-container">
-			<footer id="footer">
+		<div id="footer-container" class="footer-container">
+			<footer id="footer" class="footer">
 
 				<div class="contact-footer">
 					<h3 class="line-it-after">Contact</h3>

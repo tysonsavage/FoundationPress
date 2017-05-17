@@ -1,36 +1,37 @@
-#footer-container {
+.footer-container {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+  margin-top: rem-calc(96);
   border-top: 1px solid #ccc;
-  margin-top: rem-calc(60);
+  background-color: $blue;
 
-  #footer {
+  .footer {
     @include grid-row();
     padding: rem-calc(30) 0;
-
-    @include breakpoint(small) {
-
-        @include show-for-only(small);
-
-        color: $white;
-        background-color: $blue;
-        
-        .contact-footer {
-            @include grid-column(12);
-            h3 {
-                font-style: italic;
-                margin-bottom: 1.25rem;
-            }
-            a.white { 
+    display: block;
+    color: $white;
+    
+    .contact-footer {
+        @include grid-column(12);
+        h3 {
+            font-style: italic;
+            margin-bottom: 1.25rem;
+        }
+        a.white { 
+            color: $white;
+            border-bottom: 1px solid $white;
+            &:hover {
                 color: $white;
-                border-bottom: 1px solid $white;
-                &:hover {
-                    color: $white;
-                }   
-            }
+            }   
         }
     }
+
+    /* @include breakpoint(small only) {
+      
+        @include show-for-only(small);
+
+    } */
     
 
     ul {
@@ -40,3 +41,11 @@
     }
   }
 }
+
+@include breakpoint(small only) {
+  .footer-container {
+    margin-top: rem-calc(76);
+  }
+
+}
+

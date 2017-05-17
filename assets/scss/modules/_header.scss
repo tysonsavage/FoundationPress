@@ -1,5 +1,7 @@
 
 .site-header {
+    @include grid-row();
+
     @include breakpoint(small) {
         margin-top: 0px;
         border-bottom: 1px solid $dark-gray;
@@ -36,6 +38,7 @@
         .site-branding {
             @include grid-column(5);
             text-align: right;
+            margin-top: 0px;
         }
 
         .subheader {
@@ -43,7 +46,47 @@
 
         }
     }
+}
+.main-nav-wrapper {
 
+    display: none;
 
+    @include breakpoint(medium up) {
+        display: block;
+
+        @include grid-row();
+        margin-top: 2rem;
+
+        .main-nav {
+
+            text-align: right;
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                
+                transition: background-color 0.2s linear, color 0.2s linear;
+
+                &:hover {
+                    background-color: rgba($blue, .8);
+                    color: $white;
+                    cursor: pointer;
+                }
+
+                &.active {
+                    background-color: $blue;
+                    color: $white;
+
+                    &:hover {
+                        background-color: $blue;
+                    }
+                }
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
 }
 
