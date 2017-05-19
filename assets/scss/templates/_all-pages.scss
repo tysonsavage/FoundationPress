@@ -1,4 +1,8 @@
-
+h2 {
+    @include breakpoint(medium up) {
+        margin-bottom: 3.5rem;
+    }
+}
 .entry-title {
     float: left;
     // margin-top: 30px;
@@ -12,7 +16,7 @@
             width: 50px;
         }  
     }
-    @include breakpoint(medium) {
+    @include breakpoint(medium up) {
         &::after {
             background-image: url('../images/wave-line.jpg'), url('../images/wave-line-partial.png');
             background-position: top right, top left;
@@ -33,6 +37,8 @@
     p:first-child {
         font-family: $header-font-family;
         font-size: rem-calc(18);
+        line-height: 1.8;
+        margin-bottom: 2rem;
     }
     p.fade-in {
         opacity: 1;

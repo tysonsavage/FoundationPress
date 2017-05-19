@@ -46,8 +46,8 @@
 		<!-- <div class="site-branding-wrapper"> -->
 			<div class="site-branding ">
 				
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
 				
 			</div>			
 		<!-- <div> -->
@@ -57,11 +57,11 @@
 	<div class="main-nav-wrapper">
 		<div class="main-nav">
 			<ul>
-				<li class="active"><a href="/">about</a></li>
-                <li><a href="/why-psychotherapy/">why psychotherapy</a></li>
-                <li><a href="/mindfulness-and-psychotherapy/">mindful approach</a></li>
-                <li><a href="/fees/">fees</a></li>
-                <li><a href="/contact/">contact</a></li>
+				<li data-link="/"><a href="/">about</a></li>
+                <li data-link="/why-psychotherapy/"><a href="/why-psychotherapy/">why psychotherapy</a></li>
+                <li data-link="/mindfulness-and-psychotherapy/"><a href="/mindfulness-and-psychotherapy/">mindful approach</a></li>
+                <li data-link="/fees/"><a href="/fees/">fees</a></li>
+                <li data-link="/contact/"><a href="/contact/">contact</a></li>
 			</ul>
 		</div>
 	</div>
