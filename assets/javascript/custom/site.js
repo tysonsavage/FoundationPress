@@ -12,8 +12,6 @@ $(function() {
     $( ".main-nav li" )
         .removeClass('active')
         .each(function() {
-            console.log($(this).data('link') + ' ' + window.location.pathname);
-
             // match the href to the location.href to set active state.
             if($(this).data('link') === window.location.pathname) $(this).addClass('active');
         });

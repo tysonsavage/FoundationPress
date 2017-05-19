@@ -8,7 +8,7 @@
         
         .site-branding {
             @include grid-column(12);
-            margin-top:50px;
+            margin-top:3rem;
         }
         .site-title {
             margin-bottom: 0px;
@@ -34,7 +34,7 @@
 
 
     @include breakpoint(medium) {
-        margin-top: 150px;
+        margin-top: 8rem;
         .site-branding {
             @include grid-column(5);
             text-align: right;

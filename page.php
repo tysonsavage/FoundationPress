@@ -12,7 +12,7 @@
 
  get_header(); ?>
 
- <?php get_template_part( 'template-parts/featured-image' ); ?>
+ <?php /* get_template_part( 'template-parts/featured-image' ); */ ?>
 
  <div id="page" class="page-default" role="main">
 
@@ -20,13 +20,14 @@
  <?php while ( have_posts() ) : the_post(); ?>
    <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
        <header class="clearfix">
-           <h2 class="entry-title"><?php the_title(); ?></h2>
+           <h2 class="entry-title"><?php the_title();  ?></h2>
        </header>
        <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
        <div class="entry-content">
            <?php the_content(); ?>
            <?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
        </div>
+
        <footer>
           <?php
             wp_link_pages(
@@ -42,11 +43,24 @@
        <?php comments_template(); ?>
        <?php do_action( 'foundationpress_page_after_comments' ); ?>
    </article>
+
+    <!-- MS: Hacking this in here for now -->
+    <?php
+     if ($post->post_name == 'home'): ?>
+      <div class="side-content">
+        <img src="<?php echo get_template_directory_uri() . '/assets/images/mark-savage.jpg' ?>" >
+      </div>
+    <?php endif; ?>
+
+
  <?php endwhile;?>
+
+
+
 
  <?php do_action( 'foundationpress_after_content' ); ?>
  <?php get_sidebar(); ?>
 
- </div>
+</div>
 
  <?php get_footer();
