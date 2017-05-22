@@ -34,10 +34,18 @@ h2 {
 .entry-content {
     p {
         opacity: 0;
+        font-size: rem-calc(18);
     }
     p:first-child {
         font-family: $header-font-family;
-        font-size: rem-calc(18);
+
+        @include breakpoint(small only) {
+            font-size: rem-calc(21);
+        }
+
+        @include breakpoint(medium up) {
+            font-size: rem-calc(24);
+        }
         line-height: 1.8;
         margin-bottom: 2rem;
     }
