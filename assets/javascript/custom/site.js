@@ -13,6 +13,6 @@ $(function() {
         .removeClass('active')
         .each(function() {
             // match the href to the location.href to set active state.
-            if($(this).data('link') === window.location.pathname.replace('/', '')) $(this).addClass('active');
+            if($(this).data('link') === window.location.pathname) $(this).addClass('active');
         });
 });

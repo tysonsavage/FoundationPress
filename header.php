@@ -58,10 +58,10 @@
 		<div class="main-nav">
 			<ul>
 				<li data-link="/"><a href="/">about</a></li>
-                <li data-link="/why-psychotherapy/"><a href="/why-psychotherapy/">why psychotherapy</a></li>
-                <li data-link="/mindfulness-and-psychotherapy/"><a href="/mindfulness-and-psychotherapy/">mindful approach</a></li>
-                <li data-link="/fees/"><a href="/fees/">fees</a></li>
-                <li data-link="/contact/"><a href="/contact/">contact</a></li>
+                <li data-link="/why-psychotherapy"><a href="/why-psychotherapy">why psychotherapy</a></li>
+                <li data-link="/mindfulness-and-psychotherapy"><a href="/mindfulness-and-psychotherapy">mindful approach</a></li>
+                <li data-link="/fees"><a href="/fees">fees</a></li>
+                <li data-link="/contact"><a href="/contact">contact</a></li>
 			</ul>
 		</div>
 	</div>
