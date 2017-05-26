@@ -2,38 +2,34 @@
 .site-header {
     @include grid-row();
 
-    @include breakpoint(small) {
-        margin-top: 0px;
-        border-bottom: 1px solid $dark-gray;
-        
-        .site-branding {
-            @include grid-column(12);
-            margin-top:3rem;
-        }
-        .site-title {
-            margin-bottom: 0px;
-            white-space: no-wrap;
+    margin-top: 0px;
+    border-bottom: 1px solid $dark-gray;
+    
+    .site-branding {
+        @include grid-column(12);
+        margin-top:3rem;
+    }
+    .site-title {
+        margin-bottom: 0px;
+        white-space: no-wrap;
 
-            a {
-                color: inherit;
-            }
+        a {
+            color: inherit;
         }
-        .subheader {
-            font-family: $header-font-family;
-            font-style: italic;
-            font-size: rem-calc(19);
-            color: $black;
-        }
-
-        img.site-icon-mobile {
-            max-height: 30px;
-            /* width: 25px; */
-        }
-
+    }
+    .subheader {
+        font-family: $header-font-family;
+        font-style: italic;
+        font-size: rem-calc(19);
+        color: $black;
     }
 
+    img.site-icon-mobile {
+        max-height: 30px;
+        /* width: 25px; */
+    }
 
-    @include breakpoint(medium) {
+    @include breakpoint(medium up) {
         margin-top: 8rem;
         .site-branding {
             @include grid-column(5);
@@ -45,6 +41,13 @@
             font-size: rem-calc(24);
 
         }
+    }
+    @include breakpoint(medium portrait) {
+        .site-branding {
+            // Overwriting just the grid for tablet portrait:
+            @include grid-column(12);
+        }
+
     }
 }
 .main-nav-wrapper {

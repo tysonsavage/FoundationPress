@@ -8,11 +8,15 @@ $(function() {
             this.destroy();
         });
     });
+    var path = window.location.pathname;
+    if(path !== '/') path = path.split('/')[1];
 
     $( ".main-nav li" )
         .removeClass('active')
         .each(function() {
             // match the href to the location.href to set active state.
-            if($(this).data('link') === window.location.pathname) $(this).addClass('active');
+            if(path === $(this).data('link')){
+                $(this).addClass('active');
+            }
         });
 });

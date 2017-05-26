@@ -1,31 +1,48 @@
 div.page-default {
   @include grid-row();
   margin-top: 3rem;
-  
+
   .main-content {
-    @include breakpoint(small only) {
+    
+  @include breakpoint(small only) {
       @include grid-column(12);
     }
-
-    @include breakpoint(medium up) {
+    @include breakpoint(medium portrait) {
+      @include grid-column(12);
+    }
+    @media screen and #{breakpoint(medium landscape)} and #{breakpoint(large up)} {
       @include grid-column(7);
     }
   }
 
   .side-content {
-    @include breakpoint(small only) {
-      @include grid-column(12);
+
+    img {
+        max-width: 370px;
     }
 
-    @include breakpoint(medium up) {
+    @include breakpoint(small only) {
+      @include grid-column(12);
+      img {
+          max-width: 100%;
+      }
+    }
+    @include breakpoint(medium portrait) {
+      @include grid-column(12);
+    }
+    
+    @media screen and #{breakpoint(medium landscape)} and #{breakpoint(large up)} {
       @include grid-column(5);
       text-align: right;
       margin-top: 10rem;
 
       img {
-        max-width: 370px;
+          max-width: 370px;
       }
     }
+
+
+
   }
 }
 
