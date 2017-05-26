@@ -30,7 +30,7 @@
     }
 
     @include breakpoint(medium up) {
-        margin-top: 8rem;
+        margin-top: 6rem;
         .site-branding {
             @include grid-column(5);
             text-align: right;
@@ -90,6 +90,9 @@
                 }
             }
         }
+    }
+    @media screen and #{breakpoint(medium)} and #{breakpoint(portrait)} {
+        margin-bottom: 5rem;
     }
 }
 
