@@ -11,7 +11,7 @@ $(function() {
     var path = window.location.pathname;
     if(path !== '/') path = path.split('/')[1];
 
-    $( ".main-nav li" )
+    $( ".main-nav li a" )
         .removeClass('active')
         .each(function() {
             // match the href to the location.href to set active state.

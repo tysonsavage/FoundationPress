@@ -56,23 +56,24 @@
   }
 
   .menu a {
-    height: 45px;
+    height: 80px;
     line-height: 45px;
-    color: #e6e6e6;
+    color: $orange;//#e6e6e6;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: normal;
-    font-size: 0.8rem;
+    font-size: rem-calc(18);
     line-height: 1;
 
     &:hover:not(.button) {
-      background-color: #42525D;
+      background-color: $orange; //#42525D;
+      color: $white;
     }
   }
 
   .menu .active > a { background-color: lighten($outer-space, 10%); }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu>li:not(.menu-text)>a { padding: 2rem; }
   .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
 
   .dropdown.menu .submenu { border: 0; }

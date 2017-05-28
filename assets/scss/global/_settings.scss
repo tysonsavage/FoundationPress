@@ -66,6 +66,7 @@ $outer-space: #2c3840;
 $blue: #107FC9;
 $amethyst: #9966CC;
 $orange: #F38630;
+$red: #FF5C5C;
 
 $body-background: $white;
 $body-font-color: $black;
@@ -139,6 +140,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
+$top-nav-font-family: 'Libre Baskerville', serif;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
@@ -599,8 +601,8 @@ $titlebar-background: $white; //$outer-space;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $amethyst; //$white;
-$titlebar-icon-color-hover: darken($amethyst, 15%); //$medium-gray;
+$titlebar-icon-color: $black; //$amethyst; //$white;
+$titlebar-icon-color-hover: $orange; //$medium-gray;
 $titlebar-icon-spacing: 0.25rem;
 
 // 36. Tooltip
