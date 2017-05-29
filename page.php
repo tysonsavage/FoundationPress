@@ -44,11 +44,10 @@
        <?php do_action( 'foundationpress_page_after_comments' ); ?>
    </article>
 
-    <!-- MS: Hacking this in here for now -->
     <?php
-     if ($post->post_name == 'home'): ?>
+     if (is_front_page()): ?>
       <div class="side-content">
-        <img src="<?php echo get_template_directory_uri() . '/assets/images/mark-savage.jpg' ?>" >
+        <img src="<?php echo get_template_directory_uri() . '/assets/images/mark-savage.jpg' ?>" alt="Mark Savage Mindfulness Psychotherapy" >
       </div>
     <?php endif; ?>
 
