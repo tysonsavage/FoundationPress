@@ -37,6 +37,7 @@
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 
+<?php if ( !is_user_logged_in() ) :  ?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -47,6 +48,7 @@
   ga('send', 'pageview');
 
 </script>
+<?php endif; ?>
 
 </body>
 </html>
