@@ -5,6 +5,10 @@
     margin-top: 0px;
     border-bottom: 1px solid $dark-gray;
     
+    .site-branding-wrapper {
+        position: relative;
+    }
+
     .site-branding {
         @include grid-column(12);
         margin-top:3rem;
@@ -16,6 +20,9 @@
         a {
             color: inherit;
         }
+    }
+    .site-logo {
+        display: none;
     }
     .subheader {
         font-family: $header-font-family;
@@ -40,6 +47,12 @@
         .subheader {
             font-size: rem-calc(24);
 
+        }
+        .site-logo {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            display: inline-block;
         }
     }
     @include breakpoint(medium portrait) {
