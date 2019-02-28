@@ -3,6 +3,15 @@ h2 {
         margin-bottom: 3.5rem;
     }
 }
+
+h3 {
+    margin-top: 2.5rem;
+    border-bottom: 1pm solid red;
+    @include breakpoint(medium up) {
+        margin-top: 3.5rem;
+    }
+}
+
 .entry-title {
     float: left;
     // text-transform: lowercase;
